@@ -2,9 +2,9 @@
   "name": "mario-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --watch ./ ./app.js  -c dev",
+    "pro": "nodemon --watch ./ ./app.js  -c pro"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/skybjf/mario-example#readme",
   "dependencies": {
-    "mario-node": "^0.1.0"
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.4",
+    "mario-node": "^0.1.0",
+    "mysql": "^2.15.0",
+    "nunjucks": "^3.1.2"
   }
 }
